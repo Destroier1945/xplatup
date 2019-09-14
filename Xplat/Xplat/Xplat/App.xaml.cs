@@ -1,32 +1,40 @@
-﻿using System;
+﻿using Prism;
+using Prism.DryIoc;
+using Prism.Ioc;
+using Prism.Navigation;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xplat.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xplat
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        public App()
+        public App() : this(null) { }
+        public App(IPlatformInitializer platformInitializer)
+            : base(platformInitializer)
+        {
+        }
+
+        public App(IPlatformInitializer platformInitializer, bool setFormsDependencyResolver)
+            : base(platformInitializer, true)
+        {
+        }
+
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<HomePage>();
+        }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            await NavigationService.NavigateAsync($"{nameof(NavigationPage)}/{nameof(Views.HomePage)}");
         }
     }
 }
