@@ -30,6 +30,7 @@ namespace Xplat
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<HomePage>();
             containerRegistry.RegisterForNavigation<ProfilePage>();
+            containerRegistry.RegisterForNavigation<CollectionPage>();
 
         }
 

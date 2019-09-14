@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xplat.iOS", "Xplat\Xplat.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xplat.UWP", "Xplat\Xplat.UWP\Xplat.UWP.csproj", "{7870E579-1678-406A-8C1A-A7A90182737D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xplat", "Xplat\Xplat\Xplat.csproj", "{D1865046-558B-4E4D-BAA2-B19C3D0F2ED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xplat", "Xplat\Xplat\Xplat.csproj", "{D1865046-558B-4E4D-BAA2-B19C3D0F2ED3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,9 +153,9 @@ Global
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|ARM.Build.0 = Debug|iPhone
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|ARM.Deploy.0 = Debug|iPhone
-		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.Build.0 = Debug|iPhone
-		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.ActiveCfg = Debug|iPhoneSimulator
+		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.Build.0 = Debug|iPhoneSimulator
+		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhone.Deploy.0 = Debug|iPhoneSimulator
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{9EE75906-C79F-4FD2-BBB2-945CA83B32A7}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
